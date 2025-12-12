@@ -31,6 +31,12 @@
   run_check python3 -m cram --verbose ./sample_case/ | tee --append ./output/report_sample.txt
   "
 
+  Note:
+    - Additional sample .t tests previously under ATS_CI-2629/sample_case/ have been moved into this repository at:
+        cram_sample-2629/sample_case/
+    - Run them the same way as other sample_case tests. Example:
+        run_check python3 -m cram --verbose ./sample_case/14-firewall-basic-rules.t | tee --append ./output/report_sample.txt
+
 6. Execute docker_script.sh
   "
   cd ../
